@@ -38,6 +38,8 @@ outputs:
     description: 'The path of the stack executable _directory_'
   stack-exe:
     description: 'The path of the stack _executable_'
+  stack-root:
+    description: 'The path to the stack root'
 runs:
   using: 'node12'
   main: 'dist/index.js'

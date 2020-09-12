@@ -118,6 +118,7 @@ jobs:
 | `cabal-store` | The path to the cabal store                  | string |
 | `stack-path`  | The path of the stack executable _directory_ | string |
 | `stack-exe`   | The path of the stack _executable_           | string |
+| `stack-root`  | The path to the stack root                   | string |
 
 ## Version Support
 

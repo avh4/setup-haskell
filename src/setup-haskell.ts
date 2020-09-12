@@ -26,9 +26,15 @@ async function cabalConfig(): Promise<string> {
       );
 
     if (opts.stack.setup)
-      await core.group('Pre-installing GHC with stack', async () =>
-        exec('stack', ['setup', opts.ghc.resolved])
-      );
+      await core.group('Pre-installing GHC with stack', async () => {
+        await exec('stack', ['setup', opts.ghc.resolved]);
+
+        if (process.platform === 'win32') {
+          core.setOutput('stack-root', 'C:\\sr');
+        } else {
+          core.setOutput('stack-root', `${process.env.HOME}/.stack`);
+        }
+      });
 
     if (opts.cabal.enable)
       await core.group('Setting up cabal', async () => {
