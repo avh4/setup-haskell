@@ -112,11 +112,11 @@ jobs:
 | Name          | Description                                  | Type   |
 | ------------- | -------------------------------------------- | ------ |
 | `ghc-path`    | The path of the ghc executable _directory_   | string |
-| `cabal-path`  | The path of the cabal executable _directory_ | string |
-| `stack-path`  | The path of the stack executable _directory_ | string |
-| `cabal-store` | The path to the cabal store                  | string |
 | `ghc-exe`     | The path of the ghc _executable_             | string |
+| `cabal-path`  | The path of the cabal executable _directory_ | string |
 | `cabal-exe`   | The path of the cabal _executable_           | string |
+| `cabal-store` | The path to the cabal store                  | string |
+| `stack-path`  | The path of the stack executable _directory_ | string |
 | `stack-exe`   | The path of the stack _executable_           | string |
 
 ## Version Support
